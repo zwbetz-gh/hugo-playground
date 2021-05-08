@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0">
+  <title>{{ printf "%s | %s" .Title .Site.Title }}</title>
+</head>
+<body>
+  <nav class="menu">
+    <ul>
+      <li><a href="/">Home</a></li>
+      <li><a href="/blog/">Blog</a></li>
+    </ul>
+  </nav>
+  {{ block "main" . }}
+  {{ end }}
+</body>
+</html>
