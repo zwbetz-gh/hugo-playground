@@ -12,11 +12,11 @@ Each branch in this repo (excluding `main` and `template`) is a unique [Hugo](ht
 
 1. Download and play with a specific branch
     ```
-    git clone --single-branch -b <BRANCH-NAME> https://github.com/zwbetz-gh/hugo-playground.git <BRANCH-NAME>
+    git clone --single-branch -b <BRANCH> https://github.com/zwbetz-gh/hugo-playground.git <BRANCH>
     ```
 1. Change to it
     ```
-    cd <BRANCH-NAME>
+    cd <BRANCH>
     ```
 1. Serve it
     ```
