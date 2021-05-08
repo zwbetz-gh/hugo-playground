@@ -22,3 +22,7 @@ Each branch in this repo (excluding `main` and `template`) is a unique [Hugo](ht
     ```
     hugo serve
     ```
+
+## Credits
+
+- Copied heavily from [hugo-testing](https://github.com/jmooring/hugo-testing/tree/master). Thank you `@jmooring`
