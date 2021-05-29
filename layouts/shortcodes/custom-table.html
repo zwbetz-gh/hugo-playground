@@ -1,0 +1,19 @@
+{{ $table := .Inner | markdownify }}
+
+{{ $tableClass := .Get "tableClass" }}
+{{ $theadClass := .Get "theadClass" }}
+{{ $tbodyClass := .Get "tbodyClass" }}
+
+{{ $oldTableTag := "<table>" }}
+{{ $newTableTag := printf "<table class=\"%s\">" $tableClass }}
+{{ $table := replace $table $oldTableTag $newTableTag }}
+
+{{ $oldTheadTag := "<thead>" }}
+{{ $newTheadTag := printf "<thead class=\"%s\">" $theadClass }}
+{{ $table := replace $table $oldTheadTag $newTheadTag }}
+
+{{ $oldTbodyTag := "<tbody>" }}
+{{ $newTbodyTag := printf "<tbody class=\"%s\">" $tbodyClass }}
+{{ $table := replace $table $oldTbodyTag $newTbodyTag }}
+
+{{ $table | safeHTML }}
